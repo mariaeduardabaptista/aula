@@ -1,10 +1,10 @@
-package Classes;
+
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 
-public class Exercicio{
+public class Cores{
     public static void main(String[] args) {
 
         Scanner ler = new Scanner(System.in);
@@ -58,7 +58,7 @@ public class Exercicio{
             System.out.println("Opcao digitada invalida");
         }
         
-        }while (opcao ! = 0);
+        }while (opcao  == 0);
         ler.close();
     }
 

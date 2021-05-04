@@ -1,14 +1,24 @@
-package Classes;
+import java.time.LocalDate;
 
 public class Cor implements Comparable<Cor>{
 
 
 private int codigo;
 private String nome;
+private LocalDate dataCadastro;
 
-public Cor(int codigo, String nome) {
+public LocalDate getDataCadastro() {
+    return dataCadastro;
+}
+
+public void setDataCadastro(LocalDate dataCadastro) {
+    this.dataCadastro = dataCadastro;
+}
+
+public Cor(int codigo, String nome, LocalDate dataCadastro) {
     this.codigo = codigo;
     this.nome = nome;
+    this.dataCadastro = dataCadastro;
 }
 
 public int getCodigo() {
@@ -29,7 +39,7 @@ public void setNome(String nome) {
 
 @Override
 public String toString() {
-    return "Cor codigo=" + codigo + ", nome=" + nome;
+    return "Cor codigo=" + codigo + ", nome=" + nome + "-data:" + dataCadastro;
 
     
 }
